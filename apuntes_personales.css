@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #e8e2d5;
+    color: #302d27;
+}
+/*-------------------------------*/
+/*--|estilo_apuntes_personales|--*/
+/*-------------------------------*/
+.encabezado {
+    width: 100%;
+    min-height: 150px;
+    background: #4b3928;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+.icono_libreta {
+    width: 75px;
+    height: 75px;
+    background: #f4d06f;
+    color: #4b3928;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+.informacion_encabezado h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+.informacion_encabezado p {
+    color: #e9ddc9;
+    font-size: 16px;
+}
+/*---------------------------------*/
+/*--|estilo_contenedor_principal|--*/
+/*---------------------------------*/
+.contenedor {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+}
+.zona_escritura {
+    background: #fffdf7;
+    padding: 30px;
+    border: 1px solid #d6cbb8;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(60, 45, 30, 0.10);
+}
+.titulo_seccion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+.titulo_seccion i {
+    color: #a8793d;
+    font-size: 22px;
+}
+.titulo_seccion h2 {
+    font-size: 23px;
+}
+.zona_escritura label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+textarea {
+    width: 100%;
+    min-height: 230px;
+    padding: 18px;
+    resize: vertical;
+    border: 2px solid #d6cbb8;
+    border-radius: 6px;
+    background: #fffefb;
+    color: #302d27;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.6;
+    outline: none;
+}
+textarea:focus {
+    border-color: #a8793d;
+}
+.contador {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #777064;
+}
+.botones {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+.boton {
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.boton i {
+    font-size: 14px;
+}
+.guardar {
+    background: #4b3928;
+    color: white;
+}
+.guardar:hover {
+    background: #674d36;
+}
+.limpiar {
+    background: #ded7ca;
+    color: #302d27;
+}
+.limpiar:hover {
+    background: #ccc2b1;
+}
+.mensaje {
+    min-height: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*----------------------*/
+/*--|estilo_separador|--*/
+/*----------------------*/
+.separador {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separador i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f4d06f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #4b3928;
+}
+/*-------------------------------------*/
+/*--|estilo_zona_del_apunte_guardado|--*/
+/*-------------------------------------*/
+.zona_guardado {
+    background: #f8f1df;
+    padding: 30px;
+    border: 1px solid #d6cbb8;
+    border-radius: 8px;
+}
+.apunte_guardado {
+    min-height: 150px;
+    padding: 20px;
+    background: #fffdf7;
+    border-left: 5px solid #f4d06f;
+    white-space: pre-wrap;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+.sin_apunte {
+    color: #8a8378;
+    font-style: italic;
+}
+.restaurar {
+    background: #a8793d;
+    color: white;
+}
+.restaurar:hover {
+    background: #8f6533;
+}
+/*-------------------------------*/
+/*--|estilo_zona_para_eliminar|--*/
+/*-------------------------------*/
+.zona_restaurar {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+.zona_restaurar p {
+    margin-bottom: 12px;
+    color: #686158;
+}
+.eliminar {
+    background: #8b4a3d;
+    color: white;
+}
+.eliminar:hover {
+    background: #713b31;
+}

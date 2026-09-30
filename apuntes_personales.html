@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apuntes personales</title>
+    <link rel="stylesheet" href="apuntes_personales.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="apuntes_personales.js" defer></script>
+</head>
+<body>
+    <!--------------------------------------->
+    <!--|estructuracion_apuntes_personales|-->
+    <!--------------------------------------->
+    <header class="encabezado">
+        <div class="icono_libreta">
+            <i class="fa-solid fa-note-sticky"></i>
+        </div>
+        <div class="informacion_encabezado">
+            <h1>Apuntes Personales</h1>
+            <p>Escribe y guarda tus ideas importantes.</p>
+        </div>
+    </header>
+    <!-------------------------->
+    <!--|Contenedor_principal|-->
+    <!-------------------------->
+    <main class="contenedor">
+        <section class="zona_escritura">
+            <div class="titulo_seccion">
+                <i class="fa-solid fa-pen"></i>
+                <h2>Nuevo apunte</h2>
+            </div>
+            <label for="campoApunte">Escribe tu apunte:</label>
+            <textarea id="campoApunte"placeholder="Escribe aquí tus ideas, tareas o recordatorios..."></textarea>
+            <div class="contador">
+                <span id="contadorCaracteres">0 caracteres</span>
+                <span>Máximo recomendado: 1000</span>
+            </div>
+            <div class="botones">
+                <button id="botonGuardar" class="boton guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                <button id="botonLimpiar" class="boton limpiar"><i class="fa-solid fa-eraser"></i>Limpiar</button>
+            </div>
+            <p id="mensaje" class="mensaje"></p>
+        </section>
+        <!--------------->
+        <!--|separador|-->
+        <!--------------->
+        <div class="separador">
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <!------------------------------>
+        <!--|zona_del_apunte_guardado|-->
+        <!------------------------------>
+        <section class="zona_guardado">
+            <div class="titulo_seccion">
+                <i class="fa-solid fa-bookmark"></i>
+                <h2>Apunte guardado</h2>
+            </div>
+            <div id="apunteGuardado" class="apunte_guardado">
+                <p class="sin_apunte">Todavía no hay ningún apunte guardado.</p>
+            </div>
+            <button id="botonRestaurar" class="boton restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar apunte</button>
+        </section>
+        <!------------------------>
+        <!--|zona_para_eliminar|-->
+        <!------------------------>
+        <section class="zona_restaurar">
+            <p>¿Quieres eliminar el apunte guardado?</p>
+            <button id="botonRestablecer" class="boton eliminar"><i class="fa-solid fa-trash"></i>Restablecer todo</button>
+        </section>
+    </main>
+</body>
+</html>
